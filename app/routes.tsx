@@ -1,4 +1,4 @@
-// app/routes.ts
+// app/routes.tsx
 import { createRoutesFromElements, Route } from "react-router";
 import Welcome from "./welcome/welcome";
 
