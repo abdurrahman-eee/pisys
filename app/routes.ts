@@ -1,10 +1,7 @@
 // app/routes.ts
-import type { RouteObject } from "react-router";
-import React from "react";
-import Welcome from "./welcome/welcome";
+import type { ConfigRoute } from "@react-router/dev/config";
 
-const routes: RouteObject[] = [
-  { path: "/", element: React.createElement(Welcome) },
-];
-
-export default routes;
+export default [
+  // URL path "/" will render the component defined in app/welcome/welcome.tsx
+  { path: "/", file: "welcome/welcome.tsx" },
+] satisfies ConfigRoute[];
