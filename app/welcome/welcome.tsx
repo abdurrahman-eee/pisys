@@ -8,9 +8,8 @@ export default function Welcome() {
     <main className="hero">
       <header className="hero__top">
         <picture>
-          {/* Dark mode prefers the first source */}
           <source srcSet={logoDark} media="(prefers-color-scheme: dark)" />
-          <img src={logoLight} alt="Pi-Sys" className="hero__logo" />
+        <img src={logoLight} alt="Pi-Sys" className="hero__logo" />
         </picture>
 
         <nav className="hero__nav">
@@ -22,9 +21,7 @@ export default function Welcome() {
 
       <section className="hero__content">
         <h1>Pi-Sys</h1>
-        <p className="tagline">
-          Innovative IT &amp; Software Solutions for modern businesses.
-        </p>
+        <p className="tagline">Innovative IT &amp; Software Solutions.</p>
 
         <div className="cta">
           <Link to="#contact" className="btn btn--primary">Get a Quote</Link>
@@ -34,24 +31,24 @@ export default function Welcome() {
 
       <section id="services" className="features">
         <div className="feature">
-          <h3>Fast</h3>
-          <p>Edge-hosted on Cloudflare for ultra-low latency worldwide.</p>
+          <h3>E-commerce & ERP</h3>
+          <p>Shopify / Laravel systems tailored to your workflow.</p>
+        </div>
+        <div className="feature">
+          <h3>Edge-Hosted</h3>
+          <p>Cloudflare Workers + Pages for global low-latency apps.</p>
         </div>
         <div className="feature">
           <h3>Secure</h3>
-          <p>Automatic SSL, WAF, and DNS security baked in.</p>
-        </div>
-        <div className="feature">
-          <h3>Scalable</h3>
-          <p>From landing pages to APIs using Workers &amp; KV/D1.</p>
+          <p>Automatic SSL, WAF and best practices by default.</p>
         </div>
       </section>
 
       <section id="about" className="about">
-        <h2>About Pi-Sys</h2>
+        <h2>About</h2>
         <p>
-          We build reliable, maintainable web apps, ecommerce, and internal tools.
-          Our stack includes React/Remix, Cloudflare Workers, and modern CI/CD.
+          We design and build reliable business software: websites, dashboards,
+          and internal tools with React/Remix and Cloudflare.
         </p>
       </section>
 
